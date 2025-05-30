@@ -6,3 +6,5 @@
 ## 📌 Enlace al Video
 🎥 [Ver presentación](https://youtu.be/OM-q7BdjBRo)
 
+- No pude haber hecho la base de datos con MYSQL, porque tuve problemas
+
