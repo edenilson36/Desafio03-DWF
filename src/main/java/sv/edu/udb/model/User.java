@@ -20,21 +20,25 @@ public class User implements UserDetails {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Column(name = "id_user")
     private Long idUser;
 
-    @Column(unique = true, nullable = false)
+    @Column(name = "username", unique = true, nullable = false)
     private String username;
 
+    @Column(name = "firstname")
     private String firstname;
 
+    @Column(name = "lastname")
     private String lastname;
 
+    @Column(name = "age")
     private Integer age;
 
-    @Column(nullable = false)
+    @Column(name = "password", nullable = false)
     private String password;
 
-    // Implementación de UserDetails
+    // Implementación de UserDetails - SIN CAMBIOS
     @Override
     public Collection<? extends GrantedAuthority> getAuthorities() {
         return Collections.singletonList(new SimpleGrantedAuthority("ROLE_USER"));
